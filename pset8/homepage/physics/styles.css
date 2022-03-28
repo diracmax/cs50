@@ -1,0 +1,152 @@
+ul {
+  list-style: none;
+}
+
+.header-fixed {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #00F6ED;
+}
+
+.header-item a {
+    color: #0F1108;
+    text-decoration: none;
+}
+
+.header-item a:hover {
+    color: #CAD8DE;
+}
+
+.header-logo {
+
+}
+
+.header-nav {
+
+}
+
+.nav-wrap {
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-item {
+    padding: 0 20px;
+}
+
+.physics-explanation {
+    font-size: 20px;
+}
+
+.title-explanation {
+    font-size: 20px;
+    width: 50%;
+    margin: 20px;
+}
+
+.sub-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.physics-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.physics-explanation {
+    text-align: center;
+}
+
+.mechanics {
+    display: flex;
+    margin: 40px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.electromagnetism {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantum mechanics {
+    margin: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+.picture:nth-last-child(1) img {
+    display: block;
+}
+
+.footer-nav {
+    background-color: #0F1108;
+}
+
+.footer-item {
+    padding: 20px;
+}
+
+.footer-item a {
+    color: #CAD8DE;
+}
+
+.footer-item a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+  /* スマホ用のスタイル */
+  .title-explanation {
+      font-size: 20px;
+      width: 100%;
+
+  }
+
+  .title-explanation p {
+      margin-bottom: 40px;
+  }
+
+  .mechanics {
+      display: block!important;
+      margin: 40px;
+
+  }
+
+  .electromagnetism {
+      display: block!important;
+  }
+
+  .quantum mechanics {
+      display: block!important;
+  }
+
+  .picture {
+      width: 80%;
+  }
+
+  img {
+      width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+sort1 uses: bubble sort
+How do you know?: Processing reversed number takes more time.
+
+sort2 uses: merge sort
+How do you know?: Processing time is less.
+
+sort3 uses: selection sort
+How do you know?: Whether the number is random or not, the more numbers is, the longer it takes.
+
+
+
+all data
+sort1
+random5000
+real    0m0.061s
+user    0m0.053s
+sys     0m0.008s
+
+random10000
+real    0m1.076s
+user    0m0.364s
+sys     0m0.012s
+
+random50000
+real    0m16.891s
+user    0m6.863s
+sys     0m0.080s
+
+reversed5000
+real    0m0.080s
+user    0m0.052s
+sys     0m0.004s
+
+reversed10000
+real    0m0.394s
+user    0m0.206s
+sys     0m0.016s
+
+reversed50000
+real    0m12.204s
+user    0m4.845s
+sys     0m0.084s
+
+sort2
+random5000
+real    0m0.078s
+user    0m0.004s
+sys     0m0.017s
+
+random10000
+real    0m7.197s
+user    0m2.616s
+sys     0m0.068s
+
+random50000
+real    0m3.577s
+user    0m0.040s
+sys     0m0.067s
+
+reversed5000
+real    0m0.011s
+user    0m0.000s
+sys     0m0.011s
+
+reversed10000
+real    0m0.017s
+user    0m0.009s
+sys     0m0.009s
+
+reversed50000
+real    0m5.518s
+user    0m0.059s
+sys     0m0.059s
+
+sort3
+random5000
+real    0m0.035s
+user    0m0.027s
+sys     0m0.008s
+
+random10000
+real    0m0.202s
+user    0m0.102s
+sys     0m0.016s
+
+random50000
+real    0m7.775s
+user    0m2.537s
+sys     0m0.080s
+
+reversed5000
+real    0m0.038s
+user    0m0.025s
+sys     0m0.008s
+
+reversed10000
+real    0m0.279s
+user    0m0.111s
+sys     0m0.016s
+
+reversed50000
+real    0m7.197s
+user    0m2.616s
+sys     0m0.068s
+
+

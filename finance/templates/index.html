@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+            {% set shares_total_price = namespace(price = 0) %}
+            {% for own_stock in own_stocks %}
+            <tr>
+                <th>{{ own_stock.symbol }}</th>
+                <th>{{ lookup(own_stock.symbol).name }}</th>
+                <th>{{ own_stock.number }}</th>
+                <th>{{ lookup(own_stock.symbol).price | usd }}</th>
+                <th>{{ (own_stock.number * lookup(own_stock.symbol).price) | usd }}</th>
+                {% set shares_total_price.price =  shares_total_price.price + own_stock.number * lookup(own_stock.symbol).price %}
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{ money | usd}}</td>
+            </tr>
+        <troot>
+            <td colspan="4"></td>
+            <td>{{ (money + shares_total_price.price) | usd }}</td>
+        </troot>
+    </table>
+{% endblock %}
